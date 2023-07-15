@@ -12,3 +12,4 @@ for user_id in usuarios:
 #Formula para saber el tiempo que dura
 duration=time.time()-star_time
 print(duration)
+# Toma al rededor de 27 segundos
