@@ -14,3 +14,6 @@ with ThreadPoolExecutor() as executor:
 
 duration = time.time() - start_time
 print(duration)
+#calculo el tiempo que toma la funcion en 
+#ejecutarese 
+
