@@ -31,7 +31,8 @@ def pokemon_stats(pokemon_name):
             stat_value = stat["base_stat"]
             print(f"- {stat_name}: {stat_value}")
     else:
-        print(f"No se pudo obtener la información del Pokémon {pokemon_name.capitalize()}.")
+        
+        print(f"Could not reach  {pokemon_name.capitalize()}. information.")
 
 
 #Function for pokemon type
@@ -48,9 +49,9 @@ def pokemon_type(pokemon_name):
         for poke_type in types:
             type_name = poke_type["type"]["name"]
             print(f"- {type_name}")
+    
     else:
-        print(f"No se pudo obtener la información del Pokémon {pokemon_name.capitalize()}.")
-
+        print(f"Could not reach  {pokemon_name.capitalize()}. information.")
 
 #Function pokemon abilities
 
@@ -66,7 +67,8 @@ def pokemon_abilities(pokemon_name):
         for ability in abilities:
             ability_name = ability["ability"]["name"]
             print(f"- {ability_name}")
-
+    else:
+        print(f"Could not reach  {pokemon_name.capitalize()}. information.")
 
 #Function of pokemon height
 
@@ -80,7 +82,7 @@ def pokemon_height(pokemon_name):
         height = height_decimeters / 10  # Convert decimeters to meters
         print(f"The height of {pokemon_name.capitalize()} is: {height} meters.")
     else:
-        print(f"No se pudo obtener la información del Pokémon {pokemon_name.capitalize()}.")
+        print(f"Could not reach  {pokemon_name.capitalize()}. information.")
 
 
 
@@ -96,3 +98,5 @@ def pokemon_weight(pokemon_name):
         weight = int(weight_hectograms / 10) # Convert hectograms to kilograms
         print(f"The weight of {pokemon_name.capitalize()} is : {weight} kilograms")
 
+    else:
+        print(f"Could not reach  {pokemon_name.capitalize()}. information.")
