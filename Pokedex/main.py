@@ -1,2 +1,2 @@
-import pokedex as pokedex
+from poke
 
