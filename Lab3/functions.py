@@ -57,7 +57,7 @@ def jokes():
    # Requesting a random joke
     if option == 'joke': 
         urlGet = "https://api.chucknorris.io/jokes/random"
-        getJoke = req.get(urlGet, verify=False)
+        getJoke = req.get(urlGet)
         if getJoke.status_code == 200:
             data = getJoke.json()
             print("Chuck Norris Joke:")
@@ -66,7 +66,7 @@ def jokes():
 # Handling the 'categories' option and user selection of a category
     elif option == "categories" or option =="categorie":
          urlGet = "https://api.chucknorris.io/jokes/categories"
-         getCategories = req.get(urlGet, verify=False)
+         getCategories = req.get(urlGet)
          if getCategories.status_code == 200:
             categories = getCategories.json()
             print("Available categories: ")
@@ -92,4 +92,4 @@ def jokes():
     else:
         print("Thank you for chosing us!")
          
-#jokes()
+jokes()
