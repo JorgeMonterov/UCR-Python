@@ -4,7 +4,7 @@ print(f"What brings you here today?")
 
 def menu():
  print("Press the letter according desired option")
- option = input(" Press 'A' for Pokemon stats \n Press 'B' for to know Pokemon Type \n Press 'C' for Pokemon abilities  \n Press 'D' for pokemon height \n Press 'E' for pokemon weight \n Press 'F' to shut down Pokedex \n  ").lower()
+ option = input(" Press 'A' for Pokemon stats \n Press 'B' for to know Pokemon Type \n Press 'C' for Pokemon abilities  \n Press 'D' for pokemon height \n Press 'E' for pokemon weight \n Press 'F' to shut down Pokedex \n Option:  ").lower()
  
  if option == 'f' :
     print("See you next time!")
