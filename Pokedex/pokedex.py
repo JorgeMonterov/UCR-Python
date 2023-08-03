@@ -14,7 +14,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = "https://pokeapi.co/api/v2"
 
-on = True
+
 #Function for pokemon stats
 
 def pokemon_stats(pokemon_name):
@@ -25,7 +25,7 @@ def pokemon_stats(pokemon_name):
         stats_details = response.json()
         stats = stats_details["stats"]
 
-        #print(f"Stats de {pokemon_name.capitalize()}:")
+        
         for stat in stats:
             stat_name = stat["stat"]["name"]
             stat_value = stat["base_stat"]
@@ -44,7 +44,7 @@ def pokemon_type(pokemon_name):
         type_details = response.json()
         types = type_details["types"]
 
-        #print(f"Tipos de {pokemon_name.capitalize()}:")
+        
         for poke_type in types:
             type_name = poke_type["type"]["name"]
             print(f"- {type_name}")
@@ -62,7 +62,7 @@ def pokemon_abilities(pokemon_name):
         abilities_details = response.json()
         abilities = abilities_details["abilities"]
         
-        #print(f" {pokemon_name.capitalize()} abilities:")
+        
         for ability in abilities:
             ability_name = ability["ability"]["name"]
             print(f"- {ability_name}")
