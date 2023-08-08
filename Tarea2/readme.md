@@ -1,4 +1,9 @@
-<!-- #Pokedex2.0 
+#Proyect Numpy/Pandas/matplotlib
+
+#Handling Python libraries as Numpy and Pandas for data managemenmanipulation and analysis
+# Matplotlib to create informative visualizations for effectively communication 
+
+#Pokedex2.0 
 #Here is the upgrade to the previous pokedex
 #New visializations with famous libraries as NumPy, Pandas and matplotlib
 
@@ -14,4 +19,4 @@
 
 
 
--->
+<h1>Run menu.py<h1>
